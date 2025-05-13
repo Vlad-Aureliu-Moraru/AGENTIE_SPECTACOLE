@@ -39,13 +39,17 @@ public class DB {
         ArrayList<String> elements = new ArrayList<>();
         ArrayList<Integer> indices = new ArrayList<>();
         int found = 0;
+        boolean quote = false;
         int lastCommaIndex = -1; // To keep track of the last top-level comma
 
         for (int i = 0; i < content.length(); i++) {
             char c = content.charAt(i);
-            if (found == 0 && c == ',') {
+            if (found == 0 && c == ',' && !quote) { // Corrected comma condition
                 indices.add(i);
                 lastCommaIndex = i;
+            }
+            if (c == '"') {
+                quote = !quote; // Toggle the quote flag
             }
             if (c == '{' || c == '[') {
                 found++;
@@ -61,7 +65,6 @@ public class DB {
             startIndex = commaIndex + 1;
         }
 
-        // Add the remaining part of the string after the last top-level comma
         if (startIndex < content.length()) {
             elements.add(content.substring(startIndex));
         }

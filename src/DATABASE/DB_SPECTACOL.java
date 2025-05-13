@@ -51,6 +51,9 @@ public class DB_SPECTACOL extends DB {
 //        }
 //        System.out.println(spectacole.size());
     }
+    public ArrayList<SPECTACOL> getSpectacole() {
+        return spectacole;
+    }
     private void proccesSegmented(ArrayList<String> seg){
         ArrayList<REPREZENTATIE> reprezentatii = new ArrayList<>();
         SPECTACOL spectacol = new SPECTACOL();
@@ -67,6 +70,7 @@ public class DB_SPECTACOL extends DB {
                Nume = s.substring(6, s.length()-1);
                spectacol.setNUME(Nume);
            }if (s.matches(descRegEx)){
+                System.out.println(s);
                Desc = s.substring(6, s.length()-1);
                spectacol.setDESC(Desc);
            }

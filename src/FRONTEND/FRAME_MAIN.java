@@ -14,7 +14,7 @@ public class FRAME_MAIN extends JFrame {
     private int WIDTH = 1500;
     private int MARGIN = 20;
 
-    private PANEL_SPECTACOLE panelSpectacole = new PANEL_SPECTACOLE();
+    private PANEL_SPECTACOLE panelSpectacole = new PANEL_SPECTACOLE(HEIGHT-210,WIDTH/2+100);
     private PANEL_DESC panelDesc = new PANEL_DESC();
     private PANEL_TOTAL panelTotal = new PANEL_TOTAL();
     private NAV_BAR navBar = new NAV_BAR();
@@ -22,7 +22,7 @@ public class FRAME_MAIN extends JFrame {
     private DB_CLIENT dbClient = new DB_CLIENT();
 
     public FRAME_MAIN() {
-        this.setSize(WIDTH+20, HEIGHT+20);
+        this.setSize(WIDTH+20, HEIGHT+25);
         this.setTitle("Agentie De Spectacole");
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
@@ -33,6 +33,8 @@ public class FRAME_MAIN extends JFrame {
 
         //?ADDONS
         panelSpectacole.setBounds(MARGIN,200,WIDTH/2+100,HEIGHT-210);
+        panelSpectacole.setSpectacole(dbSpectacol.getSpectacole());
+        panelSpectacole.addSPECTACOLE();
         this.add(panelSpectacole);
 
         panelDesc.setBounds(WIDTH/2+130,10,WIDTH/2-140,HEIGHT-363);
@@ -44,5 +46,18 @@ public class FRAME_MAIN extends JFrame {
         navBar.setBounds(MARGIN,MARGIN-10,WIDTH/2+100,180);
         this.add(navBar);
 
+        updateAll();
+    }
+
+    private void updateAll(){
+        panelSpectacole.repaint();
+        panelDesc.repaint();
+        panelTotal.repaint();
+        navBar.repaint();
+        this.repaint();
+        this.revalidate();
+        panelDesc.revalidate();
+        panelTotal.revalidate();
+        navBar.revalidate();
     }
 }

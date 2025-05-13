@@ -1,0 +1,41 @@
+{
+Nume:"A Midsummer Night's Dream",
+Desc:"A delightful and enchanting comedy by William Shakespeare, filled with fairies, lovers, and mischievous magic in an Athenian forest",
+Repr:[
+  {Oras:"Bucharest",Adresa:"Bulevardul Magheru 1-3",Tel:"0213146100",Email:"bilete@tnb.ro",Locuri:250,Ora:"19:30"},
+  {Oras:"Cluj-Napoca",Adresa:"Strada Mihail Kogălniceanu 2",Tel:"0264591727",Email:"office@nationalcluj.ro",Locuri:200,Ora:"20:00"},
+  {Oras:"Constanta",Adresa:"Bulevardul Ferdinand I 11",Tel:"0241481470",Email:"teatrulconstantinidi@gmail.com",Locuri:180,Ora:"18:00"},
+  {Oras:"Iasi",Adresa:"Strada Agatha Bârsescu 18",Tel:"0232219191",Email:"rezervari@teatrulnationaliasi.ro",Locuri:220,Ora:"20:30"}
+]
+}
+{
+Nume:"The Importance of Being Earnest",
+Desc:"Oscar Wilde's witty and satirical comedy about mistaken identities and the pursuit of love in Victorian England.",
+Repr:[
+  {Oras:"Timisoara",Adresa:"Strada Alba Iulia 2",Tel:"0256430636",Email:"info@tntm.ro",Locuri:160,Ora:"19:00"},
+  {Oras:"Sibiu",Adresa:"Piața Mare 1",Tel:"0269210555",Email:"secretariat@sibfest.ro",Locuri:140,Ora:"21:00"},
+  {Oras:"Targu Mures",Adresa:"Piața Trandafirilor 1",Tel:"0265262731",Email:"teatrulnationaltgm@yahoo.com",Locuri:180,Ora:"17:30"},
+  {Oras:"Craiova",Adresa:"Strada Alexandru Ioan Cuza 11",Tel:"0251413677",Email:"teatrulmarinsorescu@rdslink.ro",Locuri:200,Ora:"20:30"},
+  {Oras:"Oradea",Adresa:"Piața Ferdinand I 4-6",Tel:"0259440742",Email:"teatrulreginaelenba@rdsor.ro",Locuri:150,Ora:"18:30"}
+]
+},
+{
+Nume:"Romeo and Juliet",
+Desc:"A timeless story of love and tragedy.",
+Repr:[{Oras:"Bucharest",Adresa:"Str. Lipscani 12",Tel:"0722112233",Email:"info@teatrulnational.ro",Locuri:200, Ora:"19:00"},{Oras:"Cluj-Napoca",Adresa:"Piața Avram Iancu 18",Tel:"0744556677",Email:"contact@operacluj.ro",Locuri:150, Ora:"20:30"}]
+},
+{
+Nume:"Hamlet",
+Desc:"A profound exploration of morality and revenge.",
+Repr:[{Oras:"Iasi",Adresa:"Bulevardul Carol I 4",Tel:"0755889900",Email:"teatrulvasilealecsandri@gmail.com",Locuri:180, Ora:"18:30"}]
+},
+{
+Nume:"The Seagull",
+Desc:"Chekhov's masterpiece about artistic conflict and unrequited love.",
+Repr:[{Oras:"Timisoara",Adresa:"Strada Alba Iulia 2",Tel:"0766112233",Email:"teatrulnationaltm@yahoo.com",Locuri:160, Ora:"20:00"}, {Oras:"Sibiu",Adresa:"Piața Mare 1",Tel:"0744998877",Email:"info@radustanca.ro",Locuri:120, Ora:"17:00"}]
+},
+{
+Nume:"Sunset Serenade",
+Desc:"A captivating musical performance featuring classic melodies.",
+Repr:[{Oras:"Constanta",Adresa:"Faleza Nord 10",Tel:"0722987654",Email:"sunset.events@email.com",Locuri:80, Ora:"21:00"}]
+}
