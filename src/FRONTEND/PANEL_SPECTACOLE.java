@@ -17,7 +17,9 @@ public class PANEL_SPECTACOLE extends JScrollPane {
     //?CONFIG
     private int HEIGHT ;
     private int WIDTH  ;
-    private int MARGIN =20 ;
+    private int MARGIN =30 ;
+
+    private int SPECTACOL_HEIGHT = 200;
 
     public PANEL_SPECTACOLE(int HEIGHT, int WIDTH  ) {
         this.HEIGHT = HEIGHT;
@@ -28,7 +30,15 @@ public class PANEL_SPECTACOLE extends JScrollPane {
         panel.setPreferredSize(new Dimension(WIDTH,HEIGHT));
         this.setViewportView(panel);
         this.setPreferredSize(new Dimension(WIDTH,HEIGHT));
-
+        this.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        this.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        this.setViewportBorder(BorderFactory.createEmptyBorder());
+        this.setBorder(BorderFactory.createEmptyBorder());
+        this.setOpaque(false);
+        this.setVisible(true);
+        this.setAutoscrolls(true);
+        this.setWheelScrollingEnabled(true);
+        getVerticalScrollBar().setUnitIncrement(16);
     }
 
     public void setHEIGHT(int HEIGHT) {
@@ -43,7 +53,6 @@ public class PANEL_SPECTACOLE extends JScrollPane {
     }
     public void addSPECTACOLE() {
         int currentY = MARGIN;
-        int panelHeight = 200; // Assuming a fixed height for each PANEL_SPECTACOL
         int verticalGap = 20;
 
         panelSpectacols.clear();
@@ -54,11 +63,11 @@ public class PANEL_SPECTACOLE extends JScrollPane {
             panelSpectacol.setNumeSpectacol(spectacole.get(i).getNUME());
             panelSpectacol.setDescSpectacol(spectacole.get(i).getDESC());
 
-            panelSpectacol.setBounds(MARGIN, currentY, WIDTH - (MARGIN * 2)-10, panelHeight);
+            panelSpectacol.setBounds(MARGIN, currentY, WIDTH - (MARGIN * 2)-10,SPECTACOL_HEIGHT);
             panel.add(panelSpectacol);
             panelSpectacols.add(panelSpectacol);
 
-            currentY += panelHeight + verticalGap;
+            currentY += SPECTACOL_HEIGHT+ verticalGap;
         }
 
         panel.setPreferredSize(new Dimension(WIDTH, currentY + MARGIN));
