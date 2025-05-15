@@ -4,9 +4,18 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class SPECTACOL {
+private int id;
 private String NUME;
 private String DESC;
 private ArrayList<REPREZENTATIE> REPRESENTATII = new ArrayList<>();
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getNUME() {
         return NUME;

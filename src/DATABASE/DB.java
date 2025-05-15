@@ -35,21 +35,23 @@ public class DB {
             }
         }
     }
-    public ArrayList<String> segmentation(String content) {
+    public ArrayList<String> segmentation(String content ) {
         ArrayList<String> elements = new ArrayList<>();
         ArrayList<Integer> indices = new ArrayList<>();
         int found = 0;
         boolean quote = false;
-        int lastCommaIndex = -1; // To keep track of the last top-level comma
+        indices.add(0);
 
         for (int i = 0; i < content.length(); i++) {
             char c = content.charAt(i);
-            if (found == 0 && c == ',' && !quote) { // Corrected comma condition
+            if (found == 0 && c == ',' && !quote) {
                 indices.add(i);
-                lastCommaIndex = i;
+//                System.out.println(found + " " + quote + " " + lastCommaIndex);
+//                System.out.println("indicies : " + indices);
             }
             if (c == '"') {
-                quote = !quote; // Toggle the quote flag
+                quote = !quote;
+//                System.out.println("found quote: " + quote );
             }
             if (c == '{' || c == '[') {
                 found++;
@@ -58,32 +60,19 @@ public class DB {
             }
         }
 
-        int startIndex = 0;
-        for (int commaIndex : indices) {
-            elements.add(content.substring(startIndex, commaIndex));
-            elements.add(content.substring(commaIndex, commaIndex + 1));
-            startIndex = commaIndex + 1;
-        }
-
-        if (startIndex < content.length()) {
-            elements.add(content.substring(startIndex));
+        indices.add(content.length()-1);
+        for (int i = 0 ; i< indices.size()-1; i++) {
+            elements.add(content.substring(indices.get(i),indices.get(i+1)));
         }
 
         return elements;
     }
-    public ArrayList<String> getOBJECT(String content){
-        ArrayList<INDEX> indices = findOBJECT(content);
-        ArrayList<String> Objects = new ArrayList<>();
-        for (INDEX ind:indices) {
-            String object = content.substring(ind.getSTART(), ind.getEND()+1);
-            Objects.add(object);
-        }
-        return Objects;
-    }
-    public ArrayList<INDEX> findOBJECT(String content) {
+
+    public ArrayList<String> findOBJECT(String content) {
         int openBraceIndex = -1;
         int braceCounter = 0;
         ArrayList<INDEX> indices = new ArrayList<>();
+        ArrayList<String> Objects = new ArrayList<>();
         for (int i = 0; i < content.length(); i++) {
             char c = content.charAt(i);
             if (c == '{') {
@@ -106,8 +95,27 @@ public class DB {
         if (braceCounter > 0 && openBraceIndex != -1) {
             System.err.println("Warning: Unclosed top-level object starting at index " + openBraceIndex);
         }
+        for (INDEX ind:indices) {
+            String object = content.substring(ind.getSTART()+1, ind.getEND());
+            if (object.length()>=2) {
+                Objects.add(object);
+            }
 
-        return indices;
+        }
+
+        return Objects;
+    }
+
+    public ArrayList<String> extractInfo(ArrayList<String>object , ArrayList<String> regex){
+        ArrayList<String> info = new ArrayList<>();
+        for (String s:object){
+            for (String r:regex){
+                if (s.matches(r)){
+                    info.add(s.substring(s.indexOf('"'),s.length()-1));
+                }
+            }
+        }
+        return info;
     }
 }
 

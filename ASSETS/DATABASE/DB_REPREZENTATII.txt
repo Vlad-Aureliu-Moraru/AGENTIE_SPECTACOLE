@@ -1,0 +1,3 @@
+#id = 0
+{id:1,"Oras":"București","Adresa":"Bulevardul Magheru 1-3","Tel":"0213146100","Email":"bilete@tnb.ro","Locuri":250,"Ora":"19:30","idSpec" = 1}
+

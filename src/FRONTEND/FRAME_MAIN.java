@@ -34,7 +34,7 @@ public class FRAME_MAIN extends JFrame {
         //?ADDONS
         panelSpectacole.setBounds(MARGIN,200,WIDTH/2+100,HEIGHT-210);
         panelSpectacole.setSpectacole(dbSpectacol.getSpectacole());
-        panelSpectacole.addSPECTACOLE();
+//        panelSpectacole.addSPECTACOLE();
         this.add(panelSpectacole);
 
         panelDesc.setBounds(WIDTH/2+130,10,WIDTH/2-140,HEIGHT-363);

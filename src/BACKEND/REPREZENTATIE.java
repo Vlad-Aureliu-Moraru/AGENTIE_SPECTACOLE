@@ -7,6 +7,8 @@ public class REPREZENTATIE {
     private String Email;
     private int Locuri;
     private String ora;
+    private int id;
+    private int idSpectacol;
 
     public String getOras() {
         return Oras;
