@@ -14,8 +14,8 @@ public class FRAME_MAIN extends JFrame {
     private int WIDTH = 1500;
     private int MARGIN = 20;
 
-    private PANEL_SPECTACOLE panelSpectacole = new PANEL_SPECTACOLE(HEIGHT-210,WIDTH/2+100);
     private PANEL_DESC panelDesc = new PANEL_DESC();
+    private PANEL_SPECTACOLE panelSpectacole = new PANEL_SPECTACOLE(HEIGHT-210,WIDTH/2+100,panelDesc);
     private PANEL_TOTAL panelTotal = new PANEL_TOTAL();
     private NAV_BAR navBar = new NAV_BAR();
     private DB_SPECTACOL dbSpectacol = new DB_SPECTACOL();

@@ -20,8 +20,10 @@ public class PANEL_SPECTACOLE extends JScrollPane {
     private int MARGIN =30 ;
 
     private int SPECTACOL_HEIGHT = 200;
+    private PANEL_DESC panelDesc = new PANEL_DESC();
 
-    public PANEL_SPECTACOLE(int HEIGHT, int WIDTH  ) {
+    public PANEL_SPECTACOLE(int HEIGHT, int WIDTH ,PANEL_DESC panelDesc) {
+        this.panelDesc = panelDesc;
         this.HEIGHT = HEIGHT;
         this.WIDTH = WIDTH;
         panel.setBackground(MAIN_COLOR);
@@ -44,7 +46,6 @@ public class PANEL_SPECTACOLE extends JScrollPane {
     public void setHEIGHT(int HEIGHT) {
         this.HEIGHT = HEIGHT;
     }
-
     public void setWIDTH(int WIDTH) {
         this.WIDTH = WIDTH;
     }
@@ -59,11 +60,7 @@ public class PANEL_SPECTACOLE extends JScrollPane {
         panel.removeAll();
 
         for (int i = 0; i < spectacole.size(); i++) {
-            PANEL_SPECTACOL panelSpectacol = new PANEL_SPECTACOL();
-            panelSpectacol.setNumeSpectacol(spectacole.get(i).getNUME());
-            panelSpectacol.setDescSpectacol(spectacole.get(i).getDESC());
-            panelSpectacol.setRep(spectacole.get(i).getREPRESENTATII().size()+"");
-
+            PANEL_SPECTACOL panelSpectacol = new PANEL_SPECTACOL(spectacole.get(i),panelDesc);
             panelSpectacol.setBounds(MARGIN, currentY, WIDTH - (MARGIN * 2)-10,SPECTACOL_HEIGHT);
             panel.add(panelSpectacol);
             panelSpectacols.add(panelSpectacol);

@@ -7,8 +7,16 @@ public class REPREZENTATIE {
     private String Email;
     private int Locuri;
     private String ora;
+    private int pretPeLoc;
     private int id;
     private int idSpectacol;
+
+    public int getPretPeLoc() {
+        return pretPeLoc;
+    }
+    public void setPretPeLoc(int pretPeLoc) {
+        this.pretPeLoc = pretPeLoc;
+    }
 
     public int getId() {
         return id;
@@ -71,6 +79,6 @@ public class REPREZENTATIE {
         this.ora = ora;
     }
     public String toString(){
-        return "Oras: "+Oras+"\nAdresa: "+Adresa+"\nTelefon: "+Telefon+"\nEmail: "+Email+"\nLocuri: "+Locuri+"\nOra: "+ora;
+        return "Oras: "+Oras+"\nAdresa: "+Adresa+"\nTelefon: "+Telefon+"\nEmail: "+Email+"\nLocuri: "+Locuri+"\nOra: "+ora+"\nId: "+id+"\nPret Pe Loc: "+pretPeLoc;
     }
 }

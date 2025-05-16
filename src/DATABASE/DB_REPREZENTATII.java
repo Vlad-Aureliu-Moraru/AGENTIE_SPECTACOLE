@@ -49,7 +49,8 @@ public class DB_REPREZENTATII extends  DB {
             rep.setTelefon(obj.get(4));
             rep.setEmail(obj.get(5));
             rep.setLocuri(Integer.parseInt(obj.get(6)));
-            rep.setOra(obj.get(7));
+            rep.setOra(obj.get(8));
+            rep.setPretPeLoc(Integer.parseInt(obj.get(7)));
             reprezentatii.add(rep);
         }
         }
