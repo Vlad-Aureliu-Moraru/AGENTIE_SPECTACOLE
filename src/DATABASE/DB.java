@@ -105,18 +105,6 @@ public class DB {
 
         return Objects;
     }
-
-    public ArrayList<String> extractInfo(ArrayList<String>object , ArrayList<String> regex){
-        ArrayList<String> info = new ArrayList<>();
-        for (String s:object){
-            for (String r:regex){
-                if (s.matches(r)){
-                    info.add(s.substring(s.indexOf('"'),s.length()-1));
-                }
-            }
-        }
-        return info;
-    }
 }
 
 

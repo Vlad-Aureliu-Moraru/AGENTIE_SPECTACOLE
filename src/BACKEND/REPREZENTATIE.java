@@ -10,6 +10,19 @@ public class REPREZENTATIE {
     private int id;
     private int idSpectacol;
 
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public int getIdSpectacol() {
+        return idSpectacol;
+    }
+    public void setIdSpectacol(int idSpectacol) {
+        this.idSpectacol = idSpectacol;
+    }
+
     public String getOras() {
         return Oras;
     }

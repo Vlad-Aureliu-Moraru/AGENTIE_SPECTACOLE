@@ -36,7 +36,9 @@ private ArrayList<REPREZENTATIE> REPRESENTATII = new ArrayList<>();
     public void setDESC(String DESC) {
         this.DESC = DESC;
     }
-
+    public void addREPRESENTATI(REPREZENTATIE REPRESENTATI) {
+        this.REPRESENTATII.add(REPRESENTATI);
+    }
     public void setREPRESENTATII(ArrayList<REPREZENTATIE> REPRESENTATII) {
         this.REPRESENTATII = REPRESENTATII;
     }

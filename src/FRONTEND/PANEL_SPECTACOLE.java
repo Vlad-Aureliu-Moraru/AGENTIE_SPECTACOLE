@@ -62,6 +62,7 @@ public class PANEL_SPECTACOLE extends JScrollPane {
             PANEL_SPECTACOL panelSpectacol = new PANEL_SPECTACOL();
             panelSpectacol.setNumeSpectacol(spectacole.get(i).getNUME());
             panelSpectacol.setDescSpectacol(spectacole.get(i).getDESC());
+            panelSpectacol.setRep(spectacole.get(i).getREPRESENTATII().size()+"");
 
             panelSpectacol.setBounds(MARGIN, currentY, WIDTH - (MARGIN * 2)-10,SPECTACOL_HEIGHT);
             panel.add(panelSpectacol);

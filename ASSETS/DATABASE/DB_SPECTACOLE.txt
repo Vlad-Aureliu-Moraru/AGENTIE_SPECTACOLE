@@ -1,21 +1,31 @@
 #id = 0;
 {
-"id":1,
-"Nume":"VLAD",
-"Desc":",,,111",
+  "id": 1,
+  "Nume": "Hamlet",
+  "Desc": "O tragedie profundă și tulburătoare care explorează teme universale precum răzbunarea, moralitatea, nebunia și incertitudinea existenței. Prințul Hamlet este bântuit de spectrul tatălui său, care îi cere să răzbune asasinatul comis de Claudius, fratele său, cel care i-a luat tronul și soția. Oscilând între îndoială și acțiune, Hamlet se confruntă cu dileme morale complexe, într-o curte regală coruptă și plină de secrete întunecate, conducând la un final tragic și inevitabil."
 }
 {
-"id":2,
-"Nume":"MORARU<<<",
-"Desc":",,,111",
+ "id": 2,
+ "Nume": "Visul unei nopți de vară",
+ "Desc": "O comedie încântătoare care împletește lumea muritorilor cu cea a zânelor într-o pădure magică, plină de iubiri încurcate, farse și iluzii poetice ce culminează într-o festivitate nupțială strălucitoare."
 }
 {
-"id":3,
-"Nume":"MORARU<<<",
-"Desc":",,,111",
+  "id": 3,
+  "Nume": "Romeo și Julieta",
+  "Desc": "O tragedie atemporală ce explorează pasiunea fulgerătoare și destinul implacabil a doi tineri îndrăgostiți, prinși în mijlocul unei vechi rivalități familiale, culminând cu un sacrificiu emoționant în numele iubirii."
 }
 {
-"id":4,
-"Nume":"MORARU<<<",
-"Desc":",,,111",
+  "id": 4,
+  "Nume": "O scrisoare pierdută",
+  "Desc": "O satiră hilară și incisivă a moravurilor politice dintr-un orășel de provincie, unde o scrisoare compromițătoare declanșează o serie de evenimente neprevăzute, dezvăluind ridicolul ambițiilor meschine și al demagogiei."
+}
+{
+  "id": 5,
+  "Nume": "Micul Prinț",
+  "Desc": "O poveste alegorică și emoționantă despre prietenie, iubire, pierdere și sensul vieții, văzută prin ochii inocenți ai unui prinț dintr-o altă planetă, care în călătoria sa întâlnește personaje memorabile și învață lecții prețioase despre esențial."
+}
+{
+  "id": 6,
+  "Nume": "Amintiri din copilărie",
+  "Desc": "O evocare nostalgică și plină de umor a anilor copilăriei într-un sat românesc pitoresc, cu personaje excentrice și întâmplări memorabile care surprind farmecul naivității și al jocurilor copilărești."
 }

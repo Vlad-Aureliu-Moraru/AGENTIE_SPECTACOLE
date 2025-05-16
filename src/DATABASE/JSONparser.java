@@ -8,14 +8,16 @@ public class JSONparser extends DB{
         ArrayList<String> objects = findOBJECT(content);
         for (String s:objects){
             s = s.substring(0,s.length()-1);
-            System.out.println(s);
+//            System.out.println(s);
             ArrayList<String> obj;
             ArrayList<String> objUPDATED = new ArrayList<>();
             obj = segmentation(s);
             for (String o:obj){
-                o = o.substring(o.indexOf(':')+1,o.length());
                 o = o.replaceAll("\"", "");
-                objUPDATED.add(o);
+                o = o.trim();
+                o = o.substring(o.indexOf(':')+1,o.length());
+//                System.out.println(o);
+                objUPDATED.add(o.trim());
             }
             trueOBJ.add(objUPDATED);
         }

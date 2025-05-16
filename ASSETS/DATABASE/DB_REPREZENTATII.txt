@@ -1,3 +1,151 @@
 #id = 0
-{id:1,"Oras":"București","Adresa":"Bulevardul Magheru 1-3","Tel":"0213146100","Email":"bilete@tnb.ro","Locuri":250,"Ora":"19:30","idSpec" = 1}
-
+{
+  "id": 1,
+  "idSpec": 1,
+  "Oras": "Cluj-Napoca",
+  "Adresa": "Piața Avram Iancu 24",
+  "Tel": "0264439133",
+  "Email": "rezervari@opera-cluj.ro",
+  "Locuri": 400,
+  "Ora": "18:00"
+}
+{
+  "id": 2,
+  "idSpec": 1,
+  "Oras": "Iași",
+  "Adresa": "Strada Lăpușneanu 14",
+  "Tel": "0232214054",
+  "Email": "teatrulnationaliasi@gmail.com",
+  "Locuri": 300,
+  "Ora": "20:00"
+}
+{
+  "id": 3,
+  "idSpec": 2,
+  "Oras": "Timișoara",
+  "Adresa": "Piața Victoriei 2",
+  "Tel": "0256491920",
+  "Email": "bilete.tm@teatrulnational.ro",
+  "Locuri": 280,
+  "Ora": "19:00"
+}
+{
+  "id": 4,
+  "idSpec": 6,
+  "Oras": "Constanța",
+  "Adresa": "Bulevardul Regina Elisabeta 5",
+  "Tel": "0241480888",
+  "Email": "teatrulconstantabilet@gmail.com",
+  "Locuri": 200,
+  "Ora": "20:30"
+}
+{
+  "id": 5,
+  "idSpec": 2,
+  "Oras": "Brașov",
+  "Adresa": "Piața Sfatului 16",
+  "Tel": "0268477919",
+  "Email": "teatrulbrasov@yahoo.com",
+  "Locuri": 350,
+  "Ora": "18:30"
+}
+{
+  "id": 7,
+  "idSpec": 3,
+  "Oras": "Sibiu",
+  "Adresa": "Strada Teatrului 17",
+  "Tel": "0269210545",
+  "Email": "bilete@radus-stanca.ro",
+  "Locuri": 380,
+  "Ora": "19:15"
+},
+{
+  "id": 8,
+  "idSpec": 4,
+  "Oras": "Craiova",
+  "Adresa": "Strada Alexandru Ioan Cuza 11",
+  "Tel": "0251413677",
+  "Email": "teatrulmarinsorescu@gmail.com",
+  "Locuri": 320,
+  "Ora": "20:15"
+},
+{
+  "id": 9,
+  "idSpec": 5,
+  "Oras": "Ploiești",
+  "Adresa": "Piața Eroilor 1",
+  "Tel": "0244512256",
+  "Email": "teatrulionluca@yahoo.com",
+  "Locuri": 260,
+  "Ora": "18:45"
+},
+{
+  "id": 10,
+  "idSpec": 6,
+  "Oras": "Arad",
+  "Adresa": "Piața Avram Iancu 25",
+  "Tel": "0257280540",
+  "Email": "teatrularad@gmail.com",
+  "Locuri": 220,
+  "Ora": "19:45"
+},
+{
+  "id": 11,
+  "idSpec": 2,
+  "Oras": "Oradea",
+  "Adresa": "Piața Ferdinand I 4",
+  "Tel": "0259440742",
+  "Email": "teatruloradea@rdsor.ro",
+  "Locuri": 360,
+  "Ora": "17:30"
+},
+{
+  "id": 12,
+  "idSpec": 4,
+  "Oras": "Târgu Mureș",
+  "Adresa": "Piața Trandafirilor 22",
+  "Tel": "0265262721",
+  "Email": "teatrulmures@gmail.com",
+  "Locuri": 290,
+  "Ora": "20:45"
+},
+{
+  "id": 13,
+  "idSpec": 3,
+  "Oras": "Galați",
+  "Adresa": "Strada Domnească 59",
+  "Tel": "0236460366",
+  "Email": "teatrulgalați@yahoo.com",
+  "Locuri": 230,
+  "Ora": "18:15"
+},
+{
+  "id": 14,
+  "idSpec": 6,
+  "Oras": "Bacău",
+  "Adresa": "Strada Iorga 2",
+  "Tel": "0234516961",
+  "Email": "teatrulbacau@gmail.com",
+  "Locuri": 310,
+  "Ora": "19:30"
+},
+{
+  "id": 15,
+  "idSpec":3,
+  "Oras": "Bistrița",
+  "Adresa": "Strada Albert Berger 10",
+  "Tel": "0263230950",
+  "Email": "teatrulbistrita@gmail.com",
+  "Locuri": 180,
+  "Ora": "20:00"
+},
+{
+  "id": 16,
+  "idSpec": 5,
+  "Oras": "Slatina",
+  "Adresa": "Piața Eugen Ionescu 1",
+  "Tel": "0249433622",
+  "Email": "teatrulsaltina@yahoo.com",
+  "Locuri": 210,
+  "Ora": "17:45"
+}
