@@ -3,10 +3,10 @@ package FRONTEND;
 import java.awt.*;
 
 public class COLOR_HOLDER {
-    private Color MAIN_COLOR = new Color(248, 242, 201);
-    private Color SECONDARY_COLOR = new Color(144, 209, 202);
-    private Color  ACCENT_COLOR= new Color(18, 153, 144);
-    private Color  ACCENT2_COLOR= new Color(9, 107, 104);
+    private Color MAIN_COLOR = new Color(255, 242, 242);
+    private Color SECONDARY_COLOR = new Color(169, 181, 223);
+    private Color  ACCENT_COLOR= new Color(120, 134, 199);
+    private Color  ACCENT2_COLOR= new Color(45, 51, 107);
     private Color ACTIVE_COLOR = new Color(14, 162, 14);
     private Color INACTIVE_COLOR = new Color(208, 28, 28);
 

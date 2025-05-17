@@ -22,7 +22,7 @@ public class PANEL_TOTAL extends JPanel {
     private JLabel TotalCost = new JLabel("Total Cost:");
     private int totalCost = 0;
 
-
+    private FRAME_MAIN frameMain;
     public PANEL_TOTAL() {
         this.setBackground(MAIN_COLOR);
         this.setLayout(null);
@@ -51,11 +51,7 @@ public class PANEL_TOTAL extends JPanel {
 
         clear.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                panelAdded.stergeRezervari();
-                panelAdded.repaint();
-                panelAdded.revalidate();
-                totalCost = 0;
-                TotalCost.setText("Total Cost: " + totalCost);
+                clearRezervare();
             }
         });
 
@@ -78,6 +74,28 @@ public class PANEL_TOTAL extends JPanel {
             totalCost+=rezerva.getREPREZENTATIE().getPretPeLoc() * rezerva.getLoc().size();
             System.out.println(rezervare.getREPREZENTATIE().getPretPeLoc());
         }
+        TotalCost.setText("Total Cost: " + totalCost);
+    }
+    public void setFrameMain(FRAME_MAIN frameMain) {
+        this.frameMain = frameMain;
+        finalize.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                frameMain.switchAnimation();
+            }
+        });
+    }
+
+    public ArrayList<REZERVARE> getRezervari() {
+        return rezervari;
+    }
+    public int getTotalCost() {
+        return totalCost;
+    }
+    public void clearRezervare() {
+        panelAdded.stergeRezervari();
+        panelAdded.repaint();
+        panelAdded.revalidate();
+        totalCost = 0;
         TotalCost.setText("Total Cost: " + totalCost);
     }
 }

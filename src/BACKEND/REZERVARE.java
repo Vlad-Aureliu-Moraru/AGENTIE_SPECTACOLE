@@ -35,14 +35,15 @@ public class REZERVARE {
     }
     public String toString() {
         StringBuilder str = new StringBuilder();
-        str.append(spectacol.getNUME()+" | ");
+        str.append("\tSpectacol :"+ spectacol.getNUME());
         str.append("\n");
-        str.append(reprezentatie.getAdresa());
+        str.append(" Adresa :"+reprezentatie.getAdresa());
         str.append("\n");
-        str.append(" | Loc: ");
+        str.append(" Loc :");
         for (int i = 0; i < loc.size(); i++) {
             str.append(loc.get(i)+",");
         }
+        str.append("\n");
     return str.toString();
     }
 }
