@@ -1,7 +1,6 @@
 package DATABASE;
 
 import BACKEND.REPREZENTATIE;
-import BACKEND.REZERVARE;
 import BACKEND.SPECTACOL;
 
 import java.io.BufferedReader;

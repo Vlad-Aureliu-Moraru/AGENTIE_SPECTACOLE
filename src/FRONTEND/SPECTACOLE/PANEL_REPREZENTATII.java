@@ -1,6 +1,7 @@
 package FRONTEND.SPECTACOLE;
 
 import BACKEND.REPREZENTATIE;
+import BACKEND.SPECTACOL;
 import FRONTEND.COLOR_HOLDER;
 import FRONTEND.PANEL_DESC;
 
@@ -15,16 +16,17 @@ public class PANEL_REPREZENTATII extends JPanel {
     private int COORDINATE_X = 0;
     private ArrayList<JButton> buttons = new ArrayList<>();
     private Color background  = color.getACCENT2_COLOR();
-    private PANEL_DESC panelDesc = new PANEL_DESC();
+    private PANEL_DESC panelDesc = new PANEL_DESC(null);
     private ArrayList<REPREZENTATIE> representatives = new ArrayList<>();
-
-    public PANEL_REPREZENTATII(ArrayList<REPREZENTATIE> representatives , PANEL_DESC panelDesc) {
-        this.representatives = representatives;
+    private SPECTACOL spec = new SPECTACOL();
+    public PANEL_REPREZENTATII(SPECTACOL spectacol, PANEL_DESC panelDesc) {
+        this.spec = spectacol;
+        this.representatives = spectacol.getREPRESENTATII();
         this.panelDesc = panelDesc;
-        this.addActionListeners();
         this.setBackground(background);
         this.setLayout(null);
         this.setSize();
+        this.addActionListeners();
 
     }
     private void setSize(){
@@ -54,9 +56,10 @@ public class PANEL_REPREZENTATII extends JPanel {
     private void addActionListeners(){
         for (JButton button : buttons) {
             button.addActionListener(e -> {
-                System.out.println("Button clicked " + button.getText() + representatives.get(Integer.parseInt(button.getText())-1));
+//                System.out.println( representatives.get(Integer.parseInt(button.getText())-1));
+//                System.out.println(spec);
                 if (panelDesc != null) {
-                    panelDesc.setDesc(representatives.get(Integer.parseInt(button.getText())-1));
+                    panelDesc.setDesc(representatives.get(Integer.parseInt(button.getText())-1),spec);
                 }else {
                     System.out.println("connector is null");
                 }

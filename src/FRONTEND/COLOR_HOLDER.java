@@ -7,6 +7,8 @@ public class COLOR_HOLDER {
     private Color SECONDARY_COLOR = new Color(144, 209, 202);
     private Color  ACCENT_COLOR= new Color(18, 153, 144);
     private Color  ACCENT2_COLOR= new Color(9, 107, 104);
+    private Color ACTIVE_COLOR = new Color(14, 162, 14);
+    private Color INACTIVE_COLOR = new Color(208, 28, 28);
 
     public void setMAIN_COLOR(Color MAIN_COLOR) {
         this.MAIN_COLOR = MAIN_COLOR;
@@ -34,6 +36,14 @@ public class COLOR_HOLDER {
 
     public Color getACCENT2_COLOR() {
         return ACCENT2_COLOR;
+    }
+
+    public Color getACTIVE_COLOR() {
+        return ACTIVE_COLOR;
+    }
+
+    public Color getINACTIVE_COLOR() {
+        return INACTIVE_COLOR;
     }
 
     public Color getMAIN_COLOR() {

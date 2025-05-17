@@ -51,6 +51,8 @@ public class DB_REPREZENTATII extends  DB {
             rep.setLocuri(Integer.parseInt(obj.get(6)));
             rep.setOra(obj.get(8));
             rep.setPretPeLoc(Integer.parseInt(obj.get(7)));
+            rep.setData(obj.get(9));
+            rep.setLocuriArray();
             reprezentatii.add(rep);
         }
         }

@@ -20,14 +20,15 @@ public class PANEL_SPECTACOL extends JPanel {
     private Color MAIN_COLOR = COLOR_HOLDER.getACCENT_COLOR();
     private SPECTACOL spectacol = new SPECTACOL();
     private PANEL_REPREZENTATII panelReprezentatii;
-    private PANEL_DESC panelDesc = new PANEL_DESC();
+    private PANEL_DESC panelDesc = new PANEL_DESC(null);
 
     public PANEL_SPECTACOL(SPECTACOL spectacol, PANEL_DESC panelDesc) {
         this.spectacol = spectacol;
         this.panelDesc = panelDesc;
         setNumeSpectacol(spectacol.getNUME());
         setDescSpectacol(spectacol.getDESC());
-        panelReprezentatii = new PANEL_REPREZENTATII(spectacol.getREPRESENTATII(),panelDesc);
+//        System.out.println("SENDING SPECTACOL"+spectacol.getNUME());
+        panelReprezentatii = new PANEL_REPREZENTATII(spectacol,panelDesc);
 
 
         this.setLayout(null);

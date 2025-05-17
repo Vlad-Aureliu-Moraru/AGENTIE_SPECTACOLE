@@ -19,8 +19,8 @@ public class PANEL_SPECTACOLE extends JScrollPane {
     private int WIDTH  ;
     private int MARGIN =30 ;
 
-    private int SPECTACOL_HEIGHT = 200;
-    private PANEL_DESC panelDesc = new PANEL_DESC();
+    private int SPECTACOL_HEIGHT = 210;
+    private PANEL_DESC panelDesc = new PANEL_DESC(null);
 
     public PANEL_SPECTACOLE(int HEIGHT, int WIDTH ,PANEL_DESC panelDesc) {
         this.panelDesc = panelDesc;
@@ -40,7 +40,8 @@ public class PANEL_SPECTACOLE extends JScrollPane {
         this.setVisible(true);
         this.setAutoscrolls(true);
         this.setWheelScrollingEnabled(true);
-        getVerticalScrollBar().setUnitIncrement(16);
+        getVerticalScrollBar().setUnitIncrement(80);
+
     }
 
     public void setHEIGHT(int HEIGHT) {

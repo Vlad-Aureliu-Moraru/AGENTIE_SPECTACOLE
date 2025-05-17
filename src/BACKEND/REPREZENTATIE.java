@@ -10,6 +10,28 @@ public class REPREZENTATIE {
     private int pretPeLoc;
     private int id;
     private int idSpectacol;
+    private String data;
+    private int[] locuri;
+
+public REPREZENTATIE() {
+
+}
+    public int[] getLocuriArray(){
+    return locuri;
+    }
+    public void setLocuriArray(){
+    locuri = new int[Locuri];
+    for(int i=0;i<Locuri;i++){
+        int val = (int)(Math.random()*2);
+        this.locuri[i]=val;
+    }
+    }
+    public void setData(String data) {
+        this.data = data;
+    }
+    public String getData() {
+        return data;
+    }
 
     public int getPretPeLoc() {
         return pretPeLoc;
@@ -79,6 +101,6 @@ public class REPREZENTATIE {
         this.ora = ora;
     }
     public String toString(){
-        return "Oras: "+Oras+"\nAdresa: "+Adresa+"\nTelefon: "+Telefon+"\nEmail: "+Email+"\nLocuri: "+Locuri+"\nOra: "+ora+"\nId: "+id+"\nPret Pe Loc: "+pretPeLoc;
+        return "Oras: "+Oras+"\nAdresa: "+Adresa+"\nTelefon: "+Telefon+"\nEmail: "+Email+"\nLocuri: "+Locuri+"\nOra: "+ora+"\nId: "+id+"\nPret Pe Loc: "+pretPeLoc +"\nLOCURIARRAY "+locuri.length;
     }
 }
