@@ -27,7 +27,6 @@ public class PANEL_SPECTACOL extends JPanel {
         this.panelDesc = panelDesc;
         setNumeSpectacol(spectacol.getNUME());
         setDescSpectacol(spectacol.getDESC());
-//        System.out.println("SENDING SPECTACOL"+spectacol.getNUME());
         panelReprezentatii = new PANEL_REPREZENTATII(spectacol,panelDesc);
 
 

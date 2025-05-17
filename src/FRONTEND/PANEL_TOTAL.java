@@ -61,9 +61,6 @@ public class PANEL_TOTAL extends JPanel {
         this.add(panelAdded);
         this.add(TotalCost);
     }
-    public void check(){
-        System.out.println("SSS");
-    }
     public void addRezervare(REZERVARE rezervare){
         rezervari.add(rezervare);
         panelAdded.addRezervari();
@@ -84,7 +81,6 @@ public class PANEL_TOTAL extends JPanel {
             }
         });
     }
-
     public ArrayList<REZERVARE> getRezervari() {
         return rezervari;
     }

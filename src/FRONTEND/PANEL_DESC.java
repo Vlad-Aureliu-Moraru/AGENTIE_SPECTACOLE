@@ -30,7 +30,7 @@ public class PANEL_DESC extends JPanel {
 
     private PANEL_LOCURI panelLocuri = new PANEL_LOCURI();
     private PANEL_INPUT panelInput;
-    private PANEL_TOTAL panelTotal = new PANEL_TOTAL();
+    private PANEL_TOTAL panelTotal;
     public PANEL_DESC(PANEL_TOTAL panelTotal) {
         this.panelTotal = panelTotal;
         this.setBackground(MAIN_COLOR);
@@ -39,9 +39,7 @@ public class PANEL_DESC extends JPanel {
 
         panelInput = new PANEL_INPUT(panelTotal,panelLocuri);
     }
-
     public void setDesc(REPREZENTATIE reprezentatie,SPECTACOL spectacol) {
-//        System.out.println("SPECT SET DESC "+spectacol.getNUME());
         this.Oras.setText("" +reprezentatie.getOras());
         this.Adresa.setText(""+reprezentatie.getAdresa());
         this.Ora.setText("Ora: "+reprezentatie.getOra());
@@ -116,8 +114,6 @@ public class PANEL_DESC extends JPanel {
         this.add(Pret);
         this.add(Data);
     }
-    public void setSpectacol(SPECTACOL spectacol) {
-        this.spectacol = spectacol;
-    }
+
 
 }

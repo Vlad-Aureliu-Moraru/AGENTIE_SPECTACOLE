@@ -21,14 +21,5 @@ public class CLIENT {
     public String getNumarDeTelefon() {
         return NumarDeTelefon;
     }
-    public void setNUME(String NUME) {
-        this.NUME = NUME;
-    }
-    public void setPRENUME(String PRENUME) {
-        this.PRENUME = PRENUME;
-    }
-    public void setNumarDeTelefon(String numarDeTelefon) {
-        NumarDeTelefon = numarDeTelefon;
-    }
 
 }

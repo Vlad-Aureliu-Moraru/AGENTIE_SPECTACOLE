@@ -52,12 +52,9 @@ public class PANEL_REPREZENTATII extends JPanel {
         this.repaint();
         this.revalidate();
     }
-
     private void addActionListeners(){
         for (JButton button : buttons) {
             button.addActionListener(e -> {
-//                System.out.println( representatives.get(Integer.parseInt(button.getText())-1));
-//                System.out.println(spec);
                 if (panelDesc != null) {
                     panelDesc.setDesc(representatives.get(Integer.parseInt(button.getText())-1),spec);
                 }else {

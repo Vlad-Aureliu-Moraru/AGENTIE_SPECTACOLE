@@ -22,7 +22,6 @@ public class PANEL_INPUT extends JPanel {
 
     public PANEL_INPUT( PANEL_TOTAL panel , PANEL_LOCURI panelLocuri) {
         panelTotal= panel;
-//        System.out.println("RECIEVING SPEC" + spectacol);
         this.panelLocuri = panelLocuri;
         setLayout(null);
         label.setBounds(0, 0, 300, 30);

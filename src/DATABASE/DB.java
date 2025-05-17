@@ -41,17 +41,13 @@ public class DB {
         int found = 0;
         boolean quote = false;
         indices.add(0);
-
         for (int i = 0; i < content.length(); i++) {
             char c = content.charAt(i);
             if (found == 0 && c == ',' && !quote) {
                 indices.add(i);
-//                System.out.println(found + " " + quote + " " + lastCommaIndex);
-//                System.out.println("indicies : " + indices);
             }
             if (c == '"') {
                 quote = !quote;
-//                System.out.println("found quote: " + quote );
             }
             if (c == '{' || c == '[') {
                 found++;
@@ -67,7 +63,6 @@ public class DB {
 
         return elements;
     }
-
     public ArrayList<String> findOBJECT(String content) {
         int openBraceIndex = -1;
         int braceCounter = 0;
@@ -79,7 +74,6 @@ public class DB {
                 braceCounter++;
                 if (braceCounter == 1) {
                     openBraceIndex = i;
-//                    System.out.println("index:" + i + " found { (start of top-level)");
                 }
             } else if (c == '}') {
                 braceCounter--;
@@ -88,7 +82,6 @@ public class DB {
                     ind.setSTART(openBraceIndex);
                     ind.setEND(i);
                     indices.add(ind);
-//                    System.out.println("index:" + i + " found } (end of top-level), object: " + content.substring(openBraceIndex, i + 1));
                 }
             }
         }

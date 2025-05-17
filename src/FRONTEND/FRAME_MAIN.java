@@ -53,7 +53,6 @@ public class FRAME_MAIN extends JFrame {
 
         updateAll();
     }
-
     public void switchAnimation(){
         int HEIGHT= this.HEIGHT;
         int coordY2 = 10;

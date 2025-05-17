@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class PANEL_ADDED extends JScrollPane {
     private JPanel panel = new JPanel();
-    private ArrayList<REZERVARE> rezervari = new ArrayList<>();
+    private ArrayList<REZERVARE> rezervari;
     private COLOR_HOLDER color = new COLOR_HOLDER();
     public PANEL_ADDED(ArrayList<REZERVARE> rezervari) {
         this.rezervari = rezervari;

@@ -8,7 +8,6 @@ public class JSONparser extends DB{
         ArrayList<String> objects = findOBJECT(content);
         for (String s:objects){
             s = s.substring(0,s.length()-1);
-//            System.out.println(s);
             ArrayList<String> obj;
             ArrayList<String> objUPDATED = new ArrayList<>();
             obj = segmentation(s);
@@ -16,7 +15,6 @@ public class JSONparser extends DB{
                 o = o.replaceAll("\"", "");
                 o = o.trim();
                 o = o.substring(o.indexOf(':')+1,o.length());
-//                System.out.println(o);
                 objUPDATED.add(o.trim());
             }
             trueOBJ.add(objUPDATED);

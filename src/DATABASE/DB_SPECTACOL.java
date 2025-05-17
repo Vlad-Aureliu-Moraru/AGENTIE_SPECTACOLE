@@ -57,14 +57,12 @@ public class DB_SPECTACOL extends DB {
         ArrayList<REPREZENTATIE> reprezentati = db_reprezent.getReprezentatii();
         for (REPREZENTATIE obj:reprezentati){
             int idSpect = obj.getIdSpectacol();
-//            System.out.println(obj.getIdSpectacol());
             SPECTACOL spectacol = getSPECTACOL(idSpect);
             if (spectacol != null){
                 spectacol.addREPRESENTATI(obj);
             }
         }
     }
-
     public SPECTACOL getSPECTACOL(int id){
         for (SPECTACOL spectacol : spectacole) {
             if (spectacol.getId() == id) {
@@ -73,8 +71,6 @@ public class DB_SPECTACOL extends DB {
         }
         return null;
     }
-
-
     public ArrayList<SPECTACOL> getSpectacole() {
         return spectacole;
     }

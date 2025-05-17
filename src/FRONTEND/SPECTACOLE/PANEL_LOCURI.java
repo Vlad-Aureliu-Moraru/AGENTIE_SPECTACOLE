@@ -10,8 +10,6 @@ public class PANEL_LOCURI extends JScrollPane {
     private JPanel panel = new JPanel();
     private COLOR_HOLDER color = new COLOR_HOLDER();
     private REPREZENTATIE rep = new REPREZENTATIE();
-
-
     public PANEL_LOCURI() {
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
         this.setViewportView(panel);
