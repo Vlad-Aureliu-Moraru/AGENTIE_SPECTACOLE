@@ -30,10 +30,10 @@ public class NAV_BAR extends JPanel {
     private ArrayList<REZERVARE> rezervari = new ArrayList<>();
 
     private FRAME_BON frameBon;
-    private String numeRegEX = "[A-Za-z]+]";
-    private String prenumeRegEx= "[A-Za-z]+]";
-    private String telRegEx= "[0-9]+]";
-    private String baniRegEx= "[0-9]+]";
+    private String numeRegEX = "[A-Za-z]+";
+    private String prenumeRegEx= "[A-Za-z]+";
+    private String telRegEx= "[0-9]+";
+    private String baniRegEx= "[0-9]+";
     public NAV_BAR() {
         this.setBackground(MAIN_COLOR);
         this.setLayout(null);
@@ -118,7 +118,16 @@ public class NAV_BAR extends JPanel {
                 rezervari = panel.getRezervari();
                 if (nume.getText().length() > 0 && prenume.getText().length() > 0 && telefon.getText().length() > 0 && bani.getText().length() > 0) {
                    if (!nume.getText().matches(numeRegEX) || !prenume.getText().matches(prenumeRegEx) || !telefon.getText().matches(telRegEx) || !bani.getText().matches(baniRegEx)) {
+                       System.out.println(nume.getText().trim().matches(numeRegEX));
+                       System.out.println(nume.getText());
+                       System.out.println(prenume.getText().matches(prenumeRegEx));
+                       System.out.println(prenume.getText());
+                       System.out.println(telefon.getText().matches(telRegEx));
+                       System.out.println(telefon.getText());
+                       System.out.println(bani.getText().matches(baniRegEx));
+                       System.out.println(bani.getText());
                        setERROR("DATE INTRODUSE ERONAT");
+
                        return;
                    }
                     if (Integer.parseInt(bani.getText())<panel.getTotalCost()){

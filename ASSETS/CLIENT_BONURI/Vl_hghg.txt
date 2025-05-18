@@ -1,0 +1,9 @@
+	CLIENT :Vl hghg
+ TEL :546546
+	Spectacol :Hamlet
+ Adresa :Piața Avram Iancu 25
+ Loc :1,2,
+
+ PRET TOTAL :130
+ ACHITAT :1555
+ REST :1425.0
